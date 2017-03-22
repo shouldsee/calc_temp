@@ -125,7 +125,9 @@ class kb_2dntca():
 #         ruleprj=np.array(list(hex2bin(rulestr,102)[::-1]));
         fir=(2**np.arange(0,9)).reshape([1,3,3]);
         pj=rca2ntca;
-        adv=lambda a, horizon: ruleprj[pj[convolve_int(a,fir,'wrap').astype(np.int)]]
+        def adv(a,horizon):
+            return ruleprj[pj[convolve_int(a,fir,'wrap').astype(np.int)]]
+        # adv=lambda a, horizon: ruleprj[pj[convolve_int(a,fir,'wrap').astype(np.int)]]
         return adv  
   
     

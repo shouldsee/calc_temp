@@ -144,4 +144,5 @@ def make_figure(figANDax,sample_data):
     ax2.set_xlabel('Avg Temp',size=15);
     ax2.set_ylabel('mean(abs(d_Temp)) - abs(mean(d_Temp))',size=15);
     ax2.set_zlabel('Density of dominating state',size=15);
-    mpld3.display(fig)
+#    mpld3.display(fig)
+    return( fig,ax,fig2,ax2)
