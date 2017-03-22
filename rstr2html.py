@@ -12,7 +12,7 @@ file_ipynb='calc_temp.ipynb';
 query = sys.argv[1:];
 # except:
 query = query[0];
-file_html='temp_'+query+'.html';
+file_html='temp_'+query.split('/')[-1]+'.html';
 if not query: 
 	print('query not recognised')
 	quit()
@@ -48,3 +48,7 @@ output, resources = exporter.from_notebook_node(output_notebook)
 # output, resources = exporter.from_notebook_node(r.nb);
 # output, resources = exporter.from_notebook_node(output_notebook)
 codecs.open(file_html, 'w', encoding='utf-8').write(output)
+
+
+import webbrowser
+webbrowser.open(file_html)
