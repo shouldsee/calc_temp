@@ -105,8 +105,8 @@ def make_figure(figANDax,sample_data):
                                           # ))
     fig.set_size_inches([5,4])
     ax.grid(color='white', linestyle='solid')
-    ax.set_ylim(0,0.38)
-    ax.set_xlim(0,1)
+#    ax.set_ylim(0,0.38)
+#    ax.set_xlim(0,1)
     put_patches(ax)
     sct = ax.scatter(xs,
                      ys,
