@@ -1,0 +1,121 @@
+<html>
+<!-- <iframe src="tst.html"> -->
+
+<div id='div_ebd'>
+<embed id='ebd'>
+<html>
+
+    <head>
+        <meta name="LifeViewer" content="viewer textarea 60 hide">
+        <script src="lv-plugin.js"></script>
+    </head>
+    <body>
+        <div class="viewer" id="viewer"><textarea>bob!</textarea><br><canvas width="480" height="480"></canvas></div>
+        
+<script>
+String.prototype.formatUnicorn = String.prototype.formatUnicorn ||
+function () {
+    "use strict";
+    var str = this.toString();
+    if (arguments.length) {
+        var t = typeof arguments[0];
+        var key;
+        var args = ("string" === t || "number" === t) ?
+            Array.prototype.slice.call(arguments)
+            : arguments[0];
+
+        for (key in args) {
+            str = str.replace(new RegExp("\\{" + key + "\\}", "gi"), args[key]);
+        }
+    }
+
+    return str;
+};
+
+var s= new String("");
+var soup=new String("3bo4b11o2b2ob2o2bobo$obobo2bo3bobo3bo2bob3ob2o$2b3obobob6o3b5o2bo2bo$bob2o3b2ob2ob3o4bo5bob2o$2o3b3o3bob4ob2o4bobob2o$5bo4bo4b2obo3b3o2bo$o2bob3obob4o4b3obob2obobo$3bo4bob5o5b3ob2o2b2o$2b3obob2ob4o2bo3bobo3bo$bo4bob2ob6obo3bo4bob2o$5b4obo3bo4bo5bo2bo$ob2obobo2bob2o2bobo2bo2b2o4bo$obo2b2ob2o2b2o3bo2b2obobob4o$6ob2ob2o3b2ob4obo3bob2o$3ob3obo2b3ob4ob4o5bo$obobo7bo3b2o6b3o3bo$bob3o6bob2ob2o3b4obob2o$o2b2o2bo2bo2bobob7ob2o3bo$2obo2bo2b5ob2obo3b2o4b2o$b2o2bob5obo2b5o2bob4o$2o2b4ob2ob4obo3bob3obo2bo$b2o3bo2bo3b6o2bo3bo2bo$bobo3b2ob2o3b3obo3bo5bo$o4b8obobobobob2ob2ob2o$3obo3b4obo3bob3obobo$o3b2obobob2o2b2o5bob2o$6bo5bob2o3b2obo2b2obo$7bo2b2obo2bobobo3bobo2b2o$2o4b7o4bo2b2ob2o3bo$o2bo3bobo3b4o2bo3b2obobo!");
+var rule="b3s23578";
+var template="<textarea>x = 300, y = 300, rule = {0} \n {1}</textarea><br><canvas width=\"480\" height=\"480\"></canvas>";
+//s=template.formatUnicorn("B3/S23","bbboooobbbboo!");
+//var s="<textarea>x = 300, y = 300, rule = B3/S238 \nbobbbbbbooooooo!</textarea><br><canvas width=\"480\" height=\"480\"></canvas>";
+//alert(s)
+var s = template.formatUnicorn(rule,soup)
+var s= "<textarea>x = 300, y = 300, rule = B2a3ar4cqtwyz5qy6-e78/S2ain3-inqy4aejkwz5-aejk6-in \n 3bo4b11o2b2ob2o2bobo$obobo2bo3bobo3bo2bob3ob2o$2b3obobob6o3b5o2bo2bo$bob2o3b2ob2ob3o4bo5bob2o$2o3b3o3bob4ob2o4bobob2o$5bo4bo4b2obo3b3o2bo$o2bob3obob4o4b3obob2obobo$3bo4bob5o5b3ob2o2b2o$2b3obob2ob4o2bo3bobo3bo$bo4bob2ob6obo3bo4bob2o$5b4obo3bo4bo5bo2bo$ob2obobo2bob2o2bobo2bo2b2o4bo$obo2b2ob2o2b2o3bo2b2obobob4o$6ob2ob2o3b2ob4obo3bob2o$3ob3obo2b3ob4ob4o5bo$obobo7bo3b2o6b3o3bo$bob3o6bob2ob2o3b4obob2o$o2b2o2bo2bo2bobob7ob2o3bo$2obo2bo2b5ob2obo3b2o4b2o$b2o2bob5obo2b5o2bob4o$2o2b4ob2ob4obo3bob3obo2bo$b2o3bo2bo3b6o2bo3bo2bo$bobo3b2ob2o3b3obo3bo5bo$o4b8obobobobob2ob2ob2o$3obo3b4obo3bob3obobo$o3b2obobob2o2b2o5bob2o$6bo5bob2o3b2obo2b2obo$7bo2b2obo2bobobo3bobo2b2o$2o4b7o4bo2b2ob2o3bo$o2bo3bobo3b4o2bo3b2obobo!</textarea><br><canvas width=\"480\" height=\"480\"></canvas>";
+
+document.getElementById("viewer").innerHTML = s;
+</script>
+<div class="viewer"><textarea>bbbbbboooooooo!</textarea><canvas width="480" height="480"></canvas></div>
+    </body>
+    </html>
+
+    
+    </embed>
+    </div>
+
+
+
+    <script type="text/javascript">
+    function ck(){
+    var container=document.getElementById('div_ebd');
+    var content = container.innerHTML; 
+    // a=container.getElementById('viewer')
+    // a=container.children[1].innerHTML;
+    // a=container.childNodes[7].nodeName
+    var s= "<textarea>x = 300, y = 300, rule = B3/S238 \n 3bo4b11o2b2ob2o2bobo$obobo2bo3bobo3bo2bob3ob2o$2b3obobob6o3b5o2bo2bo$bob2o3b2ob2ob3o4bo5bob2o$2o3b3o3bob4ob2o4bobob2o$5bo4bo4b2obo3b3o2bo$o2bob3obob4o4b3obob2obobo$3bo4bob5o5b3ob2o2b2o$2b3obob2ob4o2bo3bobo3bo$bo4bob2ob6obo3bo4bob2o$5b4obo3bo4bo5bo2bo$ob2obobo2bob2o2bobo2bo2b2o4bo$obo2b2ob2o2b2o3bo2b2obobob4o$6ob2ob2o3b2ob4obo3bob2o$3ob3obo2b3ob4ob4o5bo$obobo7bo3b2o6b3o3bo$bob3o6bob2ob2o3b4obob2o$o2b2o2bo2bo2bobob7ob2o3bo$2obo2bo2b5ob2obo3b2o4b2o$b2o2bob5obo2b5o2bob4o$2o2b4ob2ob4obo3bob3obo2bo$b2o3bo2bo3b6o2bo3bo2bo$bobo3b2ob2o3b3obo3bo5bo$o4b8obobobobob2ob2ob2o$3obo3b4obo3bob3obobo$o3b2obobob2o2b2o5bob2o$6bo5bob2o3b2obo2b2obo$7bo2b2obo2bobobo3bobo2b2o$2o4b7o4bo2b2ob2o3bo$o2bo3bobo3b4o2bo3b2obobo!</textarea><br><canvas width=\"480\" height=\"480\"></canvas>";
+    container.getElementsByTagName('div')[0].innerHTML=s;
+    // content.getElementsByTagName('div')[0].innerHTML=s;
+    var container=document.getElementById('div_ebd');
+    var a=container.getElementsByTagName('div')[0].innerHTML;
+    alert(a);
+
+    // container.innerHTML=content;
+
+    // container.innerHTML=content;
+    // container.innerHTML=container.innerHTML;
+    // document.body.appendChild(container);
+    var opened = window.open('');
+    st="<meta name='LifeViewer' content='viewer textarea 60 hide'>  <script src='http://lazyslug.no-ip.biz/lifeview/plugin/js/lv-plugin.js'> <\/script>"
+    // var a = 
+    var newHTML = '';
+    newHTML = newHTML + '<html>{0}</html>';
+    newHTML=newHTML.formatUnicorn('hello')
+    alert(newHTML)
+
+    head='<head>{0}</head>'.formatUnicorn(st);
+    // opened.document.write(st);
+    body = "<body><div class='viewer'>{0}</div></body>".formatUnicorn(a);
+    newHTML= '<html>{0}</html>'.formatUnicorn(head+body);
+    // opened.document.write("<div class='viewer'>");
+    // opened.document.write(a);
+    // opened.document.write("</div>");
+    // alert
+    // download(opened.document.documentElement.innerHTML, 'hi.html', 'text/plain');
+    download(newHTML, 'hi.html', 'text/plain');
+    // opened.document.location.reload();
+    // location.reload();
+    // return
+}
+function download(data, filename, type) {
+    var a = document.createElement("a"),
+        file = new Blob([data], {type: type});
+        // saveAs(file,filename)
+    if (window.navigator.msSaveOrOpenBlob) // IE10+
+        window.navigator.msSaveOrOpenBlob(file, filename);
+    else { // Others
+        var url = URL.createObjectURL(file);
+        a.href = url;
+        a.download = filename;
+        document.body.appendChild(a);
+        a.click();
+        setTimeout(function() {
+            document.body.removeChild(a);
+            window.URL.revokeObjectURL(url);  
+        }, 0); 
+    }
+}
+    </script>
+    <body>
+    <button onclick="ck();">aaa</button>
+    <!-- <button onclick="download('file text', 'hi.html', 'text/plain');">aaa</button>
+     --></body>
+</html>
