@@ -36,7 +36,6 @@ class ClickInfo(plugins.PluginBase):
                           window.prompt("You clicked Point "+ i + ", Ctrl+C to copy to clipboard, Rulestring:", txt);
                             
                             rule=rules[i];
-                            window.open("/view.php?"+rule);
 
 //                            var s = template.formatUnicorn(rule,soup);
 //                            var s = 'bbbbbboooooooo!';
@@ -44,27 +43,32 @@ class ClickInfo(plugins.PluginBase):
 //                            document.getElementById("viewer").innerHTML = s;
 //                            document.getElementById("viewer").visibility = "show";
 //                            document.getElementById("viewer")
-//                          var sp1 = document.createElement('textarea');
-//                          elementText = document.createTextNode(s);                            
-//                          sp1.appendChild(elementText);
+                            window.open("/view.php?rule_alias="+rule);
+
+//                            var sp1 = document.createElement('textarea');
+//                            elementText = document.createTextNode(s);                            
+//                            sp1.appendChild(elementText);
+
 //                            var sp2 = document.getElementById("textarea");
 //                            var parentDiv = sp2.parentNode;
 //                            parentDiv.replaceChild(sp1, sp2);
-//                          var cv1=document.createElement('canvas')
-//                           cv1.appendChild(document.createTextNode(''));
-//                          cv1.setAttribute('width','480');
-//                          cv1.setAttribute('height','480');
-//                          var newviewer=document.createElement('div');
-//                          newviewer.setAttribute('class','viewer');
-//                          newviewer.setAttribute('id','viewer');
-//                          newviewer.appendChild(sp1);
-//                            newviewer.appendChild(cv1);
+
+//                            var cv1=document.createElement('canvas')
+//                             cv1.appendChild(document.createTextNode(''));
+//                            cv1.setAttribute('width','480');
+//                            cv1.setAttribute('height','480');
+
+                            var newviewer=document.createElement('div');
+                            newviewer.setAttribute('class','viewer');
+                            newviewer.setAttribute('id','viewer');
+                            newviewer.appendChild(sp1);
+                            newviewer.appendChild(cv1);
 
 //                            newviewer.appendChild(document.getElementById('cv1'))
-//                            document.body.appendChild(newviewer);
+                            document.body.appendChild(newviewer);
 //                            parentDiv.parentNode.appendChild(newviewer);
 
-//                            document.getElementById('viewer').contentWindow.location.reload();
+                            document.getElementById('viewer').contentWindow.location.reload();
 
 //                            viewer.innerHTML=s;
 alert(txt);
