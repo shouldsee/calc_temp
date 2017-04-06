@@ -33,7 +33,7 @@ class ClickInfo(plugins.PluginBase):
         obj.elements().on("mousedown",
                           function(d, i){
                           txt=labels[i];
-                          window.prompt("You clicked Point "+ i + ", Ctrl+C to copy to clipboard, Rulestring:", txt);
+                          window.prompt("You clicked Point "+ i + ", Ctrl+C to copy to clipboard, Click 'OK' or 'Cancel' to open the CA in a new pop-up.   Rulestring:", txt);
                             
                             rule=rules[i];
 
