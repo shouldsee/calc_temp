@@ -1,5 +1,5 @@
 This software is licensed to free distribution under GPL v3
-Written by Feng (shouldsee.gem@gmail.com), March 2017
+Written by Feng (feng.geng.14@ucl.ac.uk), March 2017
 
 Prerequiste:
 	jupyter, astropy, runipy, numpy, nbconvert, (other missing stuff)
