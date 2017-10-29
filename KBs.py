@@ -97,6 +97,7 @@ class kb_2dntca():
                     if i + 1 == L:
                         idx = [henselidx.get( k + v + c,None) for c in subconf]
                         idxs.extend(idx)
+                    num = v
                 else:
                     idx = [henselidx[ k + num + v_i]  for v_i in v ]
                     idxs.extend(idx)
