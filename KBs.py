@@ -6,7 +6,7 @@ import copy
 base2bin=lambda data,scale,num_of_bits: bin(int(data, scale))[2:].zfill(num_of_bits);
 hex2bin=lambda hexdata,num_of_bits: base2bin(hexdata,16,num_of_bits);
 # from astropy.convolution import convolve
-#convolve_int=lambda a,fir,method:np.around(convolve(a,fir,method)).astype(np.int);
+# convolve_int=lambda a,fir,method:np.around(convolve(a,fir,method)).astype(np.int);
 import scipy.ndimage
 convolve_int=lambda a,fir,method:scipy.ndimage.filters.convolve(a,fir,mode = method)
 
@@ -200,7 +200,7 @@ def measure_temperature(sys0=None,hdist=None,*args,**kwargs):
 #     nargin = measure_temperature.nargin
     sysX=copy.copy(sys0)
     jmax=sysX.N;
-    avi=sysX.rdf()
+    avi=sysX.rdf().astype(np.int)
     siz=avi.shape
     siz=(sysX.hmax,)+siz;
     tmp=np.zeros(siz)
