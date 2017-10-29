@@ -60,12 +60,12 @@ class kb_2dntca():
         d.update(
             {k:list(gp) for k,gp in itertools.groupby(lst, lambda x:x[0])}        
         )
-        for k,lst in d.iteritems():
+        for k,lst in d.items():
             d[k] = {k:list(gp) for k,gp in itertools.groupby(lst, lambda x:x[1])}
             
-        for bs, dd in d.iteritems():
+        for bs, dd in d.items():
             OUT += bs
-            for k,lst in dd.iteritems():
+            for k,lst in dd.items():
                 OUT += k + ''.join( conf[-1] for conf in lst)
         OUT = OUT.replace('_','')
         alias = OUT
@@ -84,7 +84,7 @@ class kb_2dntca():
             lst += ['']
         d  = dict(ntuple(lst,2))
         idxs = []
-        for k, v in d.iteritems():
+        for k, v in d.items():
             s = v
             lst = [x for x in re.split("(\d)", s) if x]
             L  = len(lst)
