@@ -3,6 +3,7 @@ import sys
 TESTING = len(sys.argv) > 1 and sys.argv[1] == 'test'
 USE_MODELLER = 0
 os.environ['USE_MODELLER']  = '%d'%USE_MODELLER
+appname = 'calc_temp'
 
 LANGUAGE_CODE = 'en-us'
 TIME_ZONE = 'GB'
@@ -15,7 +16,7 @@ STATIC_URL = '/static/'
 TEMPLATE_STRING_IF_INVALID = 'No attr:'
 
 INSTALLED_APPS += (
-	'tst.apps.Config',
+	'%s.apps.Config' % appname,
 	'django_extensions',
 )
 
